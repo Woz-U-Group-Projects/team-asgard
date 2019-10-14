@@ -1,3 +1,6 @@
+TEAM NAMES: ADAM GARDNER
+
+
 Title: A blog for dogs
 
 Summary of your project: 
