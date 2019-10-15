@@ -1,3 +1,5 @@
+TEAM NAMES: VICTORIA MORSE
+
 Title: A blog for dogs
 
 Summary of your project: 
