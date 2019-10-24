@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Main from "./src/components/Main";
-import Project from "./src/components/Project";
+import Main from "./src/components/Main"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class Project extends React.Component {
