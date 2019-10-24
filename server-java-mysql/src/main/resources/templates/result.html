@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Users Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div>
+    <p>First Name:
+    <span th:text="${users.firstname}"></span>
+    </p>
+    <br />
+    <p>Last Name:
+    <span th:text="${users.lastname}"></span>
+    </p>
+    <br />
+    <p>UserName:
+    <span th:text="${users.username}"></span>
+    </p>
+    </div>
+
+</body>
+</html>

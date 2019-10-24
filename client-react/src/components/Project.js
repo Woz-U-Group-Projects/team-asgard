@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import Main from "./src/components/Main"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class Project extends React.Component {
   constructor(props) {
@@ -34,20 +36,14 @@ class Project extends React.Component {
     });
   };
 
+  
   render() {
     return (
-      <div>
-        <h3>List of tasks</h3>
-        <input ref={this.taskName} />
-        <button onClick={this.addTask}>add</button>
-        <ul>
-          {this.state.projects.map(p => (
-            <li key={p.id}>
-              {p.id} : {p.name} : {p.complete ? "complete" : "not complete"}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <Router>
+      <Switch>
+        <Route exact path="/Main" component={Main} />
+      </Switch>
+    </Router>
     );
   }
 }
