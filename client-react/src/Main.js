@@ -4,10 +4,9 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./src/components/Home";
-import Article from "./src/components/Article";
-import Contact from "./src/components/Contact";
-import Users from "./src/components/Users";
+import Home from "./Home";
+import Article from "./Article";
+import Contact from "./Contact";
  
 class Main extends Component {
   render() {
@@ -19,13 +18,11 @@ class Main extends Component {
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/article">Article</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
-            <li><NavLink to="/users">Users</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/article" component={Article}/>
             <Route path="/contact" component={Contact}/>
-            <Route path="/users" component={Users}/>
              
           </div>
         </div>
