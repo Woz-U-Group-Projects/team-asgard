@@ -6,13 +6,15 @@ import ReactDOM from 'react-dom';
   <h1><b>Dog Blog</b></h1>
 </header>
 <body>
-<div class="w3-bar w3-border w3-light-grey w3-center">
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Blog</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Articles</a>
-  <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Team</a>
-</div>
 
+const navBar = (
+  <div class="w3-bar w3-border w3-light-grey w3-center">
+    <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Blog</a>
+    <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Articles</a>
+    <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Team</a>
+  </div>
+)
 <!-- Title of Page -->
 <div>
   <h1>Tips Page</h1>
@@ -22,6 +24,8 @@ import ReactDOM from 'react-dom';
 <div class="w3-row">
 
 <!-- Tips entries -->
+
+const tips = (
   <div class="w3-col l8 s12">
     <!-- Tips entry -->
     <div class="w3-card-4 w3-margin w3-white">
@@ -46,7 +50,7 @@ import ReactDOM from 'react-dom';
     </div>
     <hr>
 
-    <!-- Tips entry -->
+    // Tips entry
     <div class="w3-card-4 w3-margin w3-white">
     <img src="" alt="" style="width:100%">
       <div class="w3-container">
@@ -67,5 +71,10 @@ import ReactDOM from 'react-dom';
         </div>
       </div>
     </div>
-  <!-- END TIPS ENTRIES -->
+  
   </div>
+)
+
+  //END TIPS ENTRIES
+
+  react.render()
