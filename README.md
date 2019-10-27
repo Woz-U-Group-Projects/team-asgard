@@ -2,6 +2,17 @@ TEAM NAMES: VICTORIA MORSE
 
 Title: A blog for dogs
 
+Name: Francis Osaji
+
+/*** BEGINNING OF CHANGES NOTES  ***/
+CHANGES MADE BY FRANCIS OSAJI:
+* ARTICLE PAGE CREATED
+* CONTACT PAGE CREATE THOUGH NOT ASSIGNED TO ME.
+* HOME PAGE CREATED THOUGH NOT ASSIGNED TO ME
+* SOME CSS FILE ADDED.
+NOTE: NONE OF THE PAGES ARE YET CONNECTED TO BACKEND (DATABASE).
+/*** END OF CHANGES NOTES ***/
+
 Summary of your project: 
 
 We are creating an application that will allow users to upload and comment on pictures of their pets.   
@@ -44,5 +55,9 @@ Initial Features:
 
 Stretch Goals:
 
+<<<<<<< HEAD
 •	Using Social Media login, Authentication
+=======
+•	Using Social Media login
+>>>>>>> NewDev
 
