@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+import React from 'react';
+import ReactDOM from 'react-dom';
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>Dog Blog</b></h1>
@@ -68,6 +69,3 @@
     </div>
   <!-- END TIPS ENTRIES -->
   </div>
-
-</body>
-</html>
