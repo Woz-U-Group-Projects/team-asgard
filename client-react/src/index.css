@@ -1,5 +1,5 @@
 body {
-  background-color: #B399FF;
+  background-color: #5ABF7D;
   padding: 20px;
   margin: 0;
 }
@@ -34,5 +34,14 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .active {
-  background-color: #D9A300;
+  background-color:#008A30;
+}
+
+.img-thumbnail {
+  width: 17%;
+}
+
+#bottomRow {
+  width: 99%;
+   
 }
