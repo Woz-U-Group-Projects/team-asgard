@@ -26,27 +26,27 @@ public class Users {
     this.id = id;
   }
 
-  public String firstName() {
+  public String getFirstName() {
     return this.firstname;
   }
 
-  public void firstName(String firstname) {
+  public void setFirstName(String firstname) {
     this.firstname = firstname;
   }
 
-  public String lastName() {
+  public String getLastName() {
 	    return this.lastname;
 	  }
 
-  public void lastName(String lastname) {
+  public void setLastName(String lastname) {
 	    this.lastname = lastname;
 	  }
 
-  public String userName() {
+  public String getUserName() {
 	    return this.username;
 	  }
 
-  public void userName(String username) {
+  public void setUserName(String username) {
 	    this.username = username;
 	  }
 
