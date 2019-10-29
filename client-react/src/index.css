@@ -1,11 +1,16 @@
 body {
-  background-color: #5ABF7D;
-  padding: 20px;
-  margin: 0;
+  background-image: url(./img/puppyPrints.png);
+  background-repeat: repeat;
+  background-size: 25%;
+  padding: 30px;
 }
-h1, h2, p, ul, li {
+h1, h2, p, ul, li, h3, h4, h5  {
   font-family: sans-serif;
 }
+h1 {
+  color: black;
+}
+
 ul.header li {
   display: inline;
   list-style-type: none;
@@ -22,8 +27,12 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+#rightNav{
+  display: inline-block;
+  float: right; 
+}
 .content {
-  background-color: #FFF;
+  background-color: white;
   padding: 20px;
 }
 .content h2 {
@@ -34,14 +43,35 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .active {
-  background-color:#008A30;
+  background-color:grey;
+}
+
+label {
+  display: block;
+  margin-bottom:20px;
 }
 
 .img-thumbnail {
   width: 17%;
 }
 
+.card{
+  border: 1px solid black;
+  padding: 10px;
+}
+
 #bottomRow {
   width: 99%;
    
+}
+
+.bottomQuote {
+  text-align: center;
+  font-style: italic;
+}
+
+.blogtext {
+  width: 75%;
+  height: 100px;
+
 }
