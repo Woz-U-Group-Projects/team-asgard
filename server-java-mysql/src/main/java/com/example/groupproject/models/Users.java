@@ -14,9 +14,9 @@ public class Users {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
-  private String firstname;
-  private String lastname;
-  private String username;
+  private String firstName;
+  private String lastName;
+  private String userName;
 
   public Long getId() {
     return this.id;
@@ -27,27 +27,27 @@ public class Users {
   }
 
   public String getFirstName() {
-    return this.firstname;
+    return this.firstName;
   }
 
-  public void setFirstName(String firstname) {
-    this.firstname = firstname;
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
   }
 
   public String getLastName() {
-	    return this.lastname;
+	    return this.lastName;
 	  }
 
-  public void setLastName(String lastname) {
-	    this.lastname = lastname;
+  public void setLastName(String lastName) {
+	    this.lastName = lastName;
 	  }
 
   public String getUserName() {
-	    return this.username;
+	    return this.userName;
 	  }
 
-  public void setUserName(String username) {
-	    this.username = username;
+  public void setUserName(String userName) {
+	    this.userName = userName;
 	  }
 
 }
