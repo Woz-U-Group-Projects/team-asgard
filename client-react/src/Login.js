@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {  Route } from "react-router-dom";
-import Registration from "./Registration";
+import {  Link } from "react-router-dom";
+
 
  
 class Login extends Component {
@@ -10,10 +10,10 @@ class Login extends Component {
         <h2>Login</h2> <br/>
 <form>
         <div>
-            <label> User Name : <input type="text" name="username" /></label>
+            <label> User Name : <input type="text" name="username" placeholder="Enter your username"/></label>
         </div>
         <div>
-            <label> Password: <input type="password" name="password" /></label>
+            <label> Password: <input type="password" name="password" placeholder="Enter your password"/></label>
         </div>
         <div>
             <input type="submit" value="Sign In" />
@@ -23,10 +23,11 @@ class Login extends Component {
 <br/>
 
 <div> 
-   <button type="button"> <Route path="/registration" component={Registration}/>
-   REGISTER
-   </button>
-  
+<Link to="./Registration">
+     <button type="button">
+          Register
+     </button>
+ </Link>
  
 </div>
 <br/> <br/>

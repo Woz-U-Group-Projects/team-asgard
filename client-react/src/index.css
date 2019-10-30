@@ -8,7 +8,7 @@ h1, h2, p, ul, li, h3, h4, h5  {
   font-family: sans-serif;
 }
 h1 {
-  color: black;
+  color:black;
 }
 
 ul.header li {
@@ -17,11 +17,11 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: #111;
+  background-color: black;
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
@@ -32,7 +32,7 @@ ul.header li a {
   float: right; 
 }
 .content {
-  background-color: white;
+  background-color:white;
   padding: 20px;
 }
 .content h2 {
@@ -56,7 +56,7 @@ label {
 }
 
 .card{
-  border: 1px solid black;
+  border: 2px solid grey;
   padding: 10px;
 }
 
@@ -70,8 +70,8 @@ label {
   font-style: italic;
 }
 
-.blogtext {
-  width: 75%;
+#blogTextbox {
+  width: 70%;
   height: 100px;
 
 }
