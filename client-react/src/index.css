@@ -1,14 +1,19 @@
 body {
-  background-image: url(./img/puppyPrints.png);
-  background-repeat: repeat;
-  background-size: 25%;
+  background-color: white;
   padding: 30px;
 }
-h1, h2, p, ul, li, h3, h4, h5  {
+
+h1, h2, p, ul, li, h3, h4, h5, #blogName {
   font-family: sans-serif;
 }
+
 h1 {
   color:black;
+}
+
+ul.header {
+  background-color: black;
+  padding: 0;
 }
 
 ul.header li {
@@ -16,10 +21,7 @@ ul.header li {
   list-style-type: none;
   margin: 0;
 }
-ul.header {
-  background-color: black;
-  padding: 0;
-}
+
 ul.header li a {
   color: white;
   font-weight: bold;
@@ -27,21 +29,25 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
 #rightNav{
   display: inline-block;
   float: right; 
 }
+
 .content {
-  background-color:white;
   padding: 20px;
 }
+
 .content h2 {
   padding: 0;
   margin: 0;
 }
+
 .content li {
   margin-bottom: 10px;
 }
+
 .active {
   background-color:grey;
 }
@@ -55,14 +61,10 @@ label {
   width: 17%;
 }
 
-.card{
-  border: 2px solid grey;
-  padding: 10px;
-}
+#blogTextbox {
+  width: 70%;
+  height: 100px;
 
-#bottomRow {
-  width: 99%;
-   
 }
 
 .bottomQuote {
@@ -70,8 +72,7 @@ label {
   font-style: italic;
 }
 
-#blogTextbox {
-  width: 70%;
-  height: 100px;
-
+#bottomRow {
+  width: 99%;
+  bottom:0px; 
 }

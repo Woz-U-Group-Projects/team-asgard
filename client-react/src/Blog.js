@@ -50,9 +50,8 @@ class Blog extends Component {
   render() {
     return (
       <div>
-        <label>
-          Name: 
-        <input ref={this.name} placeholder="Enter username"/><br></br>
+        <label id="blogName">
+          Name:<input ref={this.name} placeholder="Enter username"/><br></br>
         </label>
      
          <input ref={this.content} id="blogTextbox" placeholder="Write your blog entry here"/><br></br> 
