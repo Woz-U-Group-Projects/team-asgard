@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
+
  
 /*class Users extends Component {
   render() {
@@ -20,6 +21,7 @@ class Users extends React.Component {
     this.lastName = React.createRef();
     this.userName = React.createRef();
   }
+
 
   componentDidMount() {
     this.getData();
@@ -67,26 +69,28 @@ class Users extends React.Component {
         <br></br>
         <button onClick={this.addUser}>Add to Database</button>
         <h3>List of Users in Our Database</h3>
-        <ul>
-          {this.state.projects.map(p => (
-            <table>
-              <thead>
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+        <table >
+            <div>
+                <th>ID**</th>
+                <th>First Name**</th>
+                <th>Last Name**</th>
                 <th>UserName</th>
-              </thead>
-              <tbody>
+            </div>
+            <div>
+          {this.state.projects.map(p => (
+            
+
+              
               <tr key={p.id}>
-                <td>{p.id}</td>  
-                <td>{p.firstName}</td>
-                <td>{p.lastName} </td>
+                <td>{p.id}**</td>  
+                <td>{p.firstName}**</td>
+                <td>{p.lastName}** </td>
                 <td>{p.userName} </td>
               </tr>
-              </tbody>
-            </table>
-          ))}
-        </ul>
+              
+            
+          ))}</div>
+        </table>
       </div>
     );
   }
