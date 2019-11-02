@@ -5,6 +5,20 @@ TEAM NAMES: ADAM GARDNER
 
 Title: A blog for dogs
 
+Name: Francis Osaji, Adam Gardner
+
+/*** BEGINNING OF CHANGES NOTES  ***/
+CHANGES MADE BY FRANCIS OSAJI:
+* ARTICLE PAGE CREATED
+* CONTACT PAGE CREATE THOUGH NOT ASSIGNED TO ME.
+* HOME PAGE CREATED THOUGH NOT ASSIGNED TO ME
+* SOME CSS FILE ADDED.
+NOTE: NONE OF THE PAGES ARE YET CONNECTED TO BACKEND (DATABASE).
+CCHANGES MADE BY Adam Gardner:
+* USER PAGE CREATED
+* USER PAGE HAS WORKING API FOR CREATING USER IN TABLE ON LOCAL MYSQL DB.
+/*** END OF CHANGES NOTES ***/
+
 Summary of your project: 
 
 We are creating an application that will allow users to upload and comment on pictures of their pets.   
@@ -47,5 +61,7 @@ Initial Features:
 
 Stretch Goals:
 
+
 •	Using Social Media login, Authentication
+
 
