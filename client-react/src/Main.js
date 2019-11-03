@@ -41,6 +41,7 @@ class Main extends Component {
               <Route path="/contact" component={Contact}/>
                <Route path="/terms" component={Terms}/>
               <Route path="/privacypolicy" component={Privacypolicy}/>
+              <Route path="/users" component={Users}/>
         
             
              
