@@ -1,16 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
  
-class Contact extends Component {
+
+class Contact extends React.Component {
+  onSubmit = () => {    this.props.history.push('/')  }
   render() {
     return (
-      <div>
-        <h2>Contact Us</h2>
-        <p> Contact details or form field goes here.
-       <a href="google.com">Here can be used for contact link</a>.
-        </p>
-      </div>
-    );
+      <form>
+        <input placeholder="name" type="name" />
+         <br/>
+        <input placeholder="email" type="email" />
+        <br/>
+        <button onClick={this.onSubmit}>Submit</button>      </form>
+    )
   }
 }
  
 export default Contact;
+
+

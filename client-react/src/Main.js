@@ -5,19 +5,23 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from "./Home";
+import doglogo from "./img/doglogo.png";
 import Article from "./Article";
 import Register from "./Register";
 import Login from "./Login";
 import Forgotpass from "./Forgotpass";
 import Contact from "./Contact";
 import Users from "./Users";
+import Terms from "./Terms";
+import Privacypolicy from "./Privacypolicy";
+
  
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <h1>Dog Blog (Animal Lovers)</h1>
+          <h1><img src={doglogo} alt="DogBlog (For Animal Lovers"/></h1>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/article">Article</NavLink></li>
@@ -34,15 +38,19 @@ class Main extends Component {
             <Route path="/register" component={Register}/>
              <Route path="/login" component={Login}/>
               <Route path="/forgotpass" component={Forgotpass}/>
-             <Route path="/contact" component={Contact}/>
-             <Route path="/users" component={Users}/>
+              <Route path="/contact" component={Contact}/>
+               <Route path="/terms" component={Terms}/>
+              <Route path="/privacypolicy" component={Privacypolicy}/>
+        
+            
              
           </div>
 
           <div className="footer">
             <div class="container">
             © 2019 Copyright. All Rights Reserved.
-            <a class="grey-text text-lighten-4 right" href="https://woz-u.com">  Dog Blog.</a>
+             <NavLink to="/"> Home</NavLink> | <NavLink to="./terms">Terms of Use</NavLink> | 
+             <NavLink to="./privacypolicy">Privacy Policy</NavLink>
             </div>
           </div>
              
