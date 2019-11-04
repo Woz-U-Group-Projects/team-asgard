@@ -1,6 +1,12 @@
 package com.example.groupproject.chat;
 
 	import javax.persistence.*;
+	
+	import javax.validation.constraints.NotNull;
+
+	import java.util.Date;
+
+	import com.fasterxml.jackson.annotation.JsonFormat;
 
 	@Entity
 	@Table(name="blog")
@@ -11,6 +17,7 @@ package com.example.groupproject.chat;
 	    private Integer id;
 	    private String name;
 	    private String content;
+	   
 
 	    public Integer getId() {
 	        return id;
@@ -36,4 +43,22 @@ package com.example.groupproject.chat;
 	        this.content = content;
 	    }
 
+	    @Column(name="date")
+	    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")
+	    @Temporal(TemporalType.DATE)
+	    @NotNull
+	    private Date date;
+	    
+	    public void setDate(Date date){
+	        this.date = date;
+	    }
+
+	    public Date getDate(){
+	        return this.date;
+	    }
+
+
+	    
+	    
+	    
 }

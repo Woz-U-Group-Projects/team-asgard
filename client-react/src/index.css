@@ -4,15 +4,20 @@ body {
 }
 
 h1, h2, p, ul, li, h3, h4, h5, #blogName {
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
-  color:black;
+  color:#0B0C10;
+  text-align: center;
+}
+
+h4 {
+  color: #45A29E;
 }
 
 ul.header {
-  background-color: black;
+  background-color: #1F2833;
   padding: 0;
 }
 
@@ -49,7 +54,7 @@ ul.header li a {
 }
 
 .active {
-  background-color:grey;
+  background-color:#45A29E;
 }
 
 label {
@@ -61,10 +66,19 @@ label {
   width: 17%;
 }
 
+.img-cover {
+  width: 90%;
+  border: 10px solid #66FCF1;
+  border-radius: 5%;
+}
 #blogTextbox {
   width: 70%;
   height: 100px;
 
+}
+#About {
+  background-color: #66FCF1;
+  color: #1f2833;
 }
 
 .bottomQuote {
@@ -75,4 +89,57 @@ label {
 #bottomRow {
   width: 99%;
   bottom:0px; 
+}
+
+#titleCard {
+  background-color: #45A29E;
+  color: white;
+border: none;
+}
+
+.card {
+  box-shadow: 5px 10px #C5C6C7;
+  color: #0B0C10;
+  padding: 20px;
+}
+
+.card1 {
+  color: #0B0C10;
+  padding: 20px;
+}
+
+#half {
+  background-color:#1f2833;
+  color: white;
+}
+
+
+#quote {
+  margin: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 85px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#socialMedia {
+  text-align: center;
+}
+
+.fa-facebook {
+  background:#0B0C10;
+  color: white;
+}
+.fa-twitter {
+  background: #45A29E;
+  color: white;
+}
+
+.sButton {
+  padding: 60px;
 }
