@@ -10,11 +10,11 @@ This project will utilize a SQL database that will allow users to be authenticat
 
 Technology Used:
 
-•	Front End: React
+•	Front End: ReactJs.
 
-•	Back End: Spring/Express
+•	Back End: Spring Suite.
 
-•	Database: MySQL/SQLite
+•	Database: MySQL.
 
 Initial Features:
 
