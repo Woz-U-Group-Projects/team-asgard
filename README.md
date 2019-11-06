@@ -1,3 +1,5 @@
+TEAM NAMES: VICTORIA MORSE
+
 Title: A blog for dogs
 
 Name: Francis Osaji, Adam Gardner
@@ -26,9 +28,9 @@ Technology Used:
 
 •	Front End: React
 
-•	Back End: Spring/Express
+•	Back End: Spring
 
-•	Database: MySQL/SQLite
+•	Database: MySQL
 
 Initial Features:
 
@@ -56,5 +58,9 @@ Initial Features:
 
 Stretch Goals:
 
+<<<<<<< HEAD
+•	Using Social Media login, Authentication
+=======
 •	Using Social Media login
+>>>>>>> NewDev
 

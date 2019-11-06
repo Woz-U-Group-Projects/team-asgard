@@ -1,40 +1,60 @@
 body {
-  background-color: #B399FF;
-  padding: 20px;
-  margin: 0;
+  background-color: white;
+  padding: 30px;
 }
-h1, h2, p, ul, li {
-  font-family: sans-serif;
+
+h1, h2, p, ul, li, h3, h4, h5, #blogName {
+  font-family: 'Ubuntu', sans-serif;
 }
+
+h1 {
+  color:#0B0C10;
+  text-align: center;
+}
+
+h4 {
+  color: #45A29E;
+}
+
+ul.header {
+  background-color: #1F2833;
+  padding: 0;
+}
+
 ul.header li {
   display: inline;
   list-style-type: none;
   margin: 0;
 }
-ul.header {
-  background-color: #111;
-  padding: 0;
-}
+
 ul.header li a {
-  color: #FFF;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
+
+#rightNav{
+  display: inline-block;
+  float: right; 
+}
+
 .content {
-  background-color: #FFF;
   padding: 20px;
 }
+
 .content h2 {
   padding: 0;
   margin: 0;
 }
+
 .content li {
   margin-bottom: 10px;
 }
+
 .active {
-  background-color: #D9A300;
+  background-color:#45A29E;
 }
 
 .footer {
@@ -46,4 +66,91 @@ ul.header li a {
   background-color: black;
   color: white;
   text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom:20px;
+}
+
+.img-thumbnail {
+  width: 17%;
+}
+
+.img-cover {
+  width: 90%;
+  border: 10px solid #66FCF1;
+  border-radius: 5%;
+}
+#blogTextbox {
+  width: 70%;
+  height: 100px;
+
+}
+#About {
+  background-color: #66FCF1;
+  color: #1f2833;
+}
+
+.bottomQuote {
+  text-align: center;
+  font-style: italic;
+}
+
+#bottomRow {
+  width: 99%;
+  bottom:0px; 
+}
+
+#titleCard {
+  background-color: #45A29E;
+  color: white;
+border: none;
+}
+
+.card {
+  box-shadow: 5px 10px #C5C6C7;
+  color: #0B0C10;
+  padding: 20px;
+}
+
+.card1 {
+  color: #0B0C10;
+  padding: 20px;
+}
+
+#half {
+  background-color:#1f2833;
+  color: white;
+}
+
+
+#quote {
+  margin: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 85px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#socialMedia {
+  text-align: center;
+}
+
+.fa-facebook {
+  background:#0B0C10;
+  color: white;
+}
+.fa-twitter {
+  background: #45A29E;
+  color: white;
+}
+
+.sButton {
+  padding: 60px;
 }
