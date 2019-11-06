@@ -18,7 +18,7 @@ import Privacypolicy from "./Privacypolicy";
 
 import Team from "./Team";
 import Tips from "./Tips";
-import Login from "./Login";
+
 
  
 class Main extends Component {
@@ -31,18 +31,18 @@ class Main extends Component {
           <br/>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/article">Article</NavLink></li>
+            
              <li><NavLink to="/register">Register</NavLink></li>
               <li><NavLink to="/login">Login</NavLink></li>
               <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
-            <li><NavLink to="/contact">Contact Us</NavLink></li>
+            
             <li><NavLink to="/users">Users</NavLink></li>
             
             <li><NavLink to="/blog">Blog</NavLink></li>
             <li><NavLink to="/article">Articles</NavLink></li>
             <li><NavLink to="/tips">Tips</NavLink></li>
             <li><NavLink to="/team">Team</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
             <span><li><NavLink to="/login" id="rightNav">Sign In</NavLink></li></span>
            
           </ul>
@@ -61,8 +61,8 @@ class Main extends Component {
             
             <Route path="/tips" component={Tips}/>
             <Route path="/team" component={Team}/>
-            <Route path="/contact" component={Contact}/>
-            <Route path="/login" component={Login}/>
+            
+            
              
           </div>
 
