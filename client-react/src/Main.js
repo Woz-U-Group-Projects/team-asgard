@@ -12,6 +12,7 @@ import Register from "./Register";
 import Login from "./Login";
 import Forgotpass from "./Forgotpass";
 import Contact from "./Contact";
+import Tips from "./Tips";
 import Users from "./Users";
 import Terms from "./Terms";
 import Privacypolicy from "./Privacypolicy";
@@ -31,6 +32,7 @@ class Main extends Component {
           <br/>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
+            <li><NavLink to="/tips">Tips</NavLink></li>
             
              <li><NavLink to="/register">Register</NavLink></li>
               <li><NavLink to="/login">Login</NavLink></li>
@@ -50,19 +52,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/blog" component={Blog}/>
             <Route path="/article" component={Article}/>
-            <Route path="/register" component={Register}/>
-             <Route path="/login" component={Login}/>
-              <Route path="/forgotpass" component={Forgotpass}/>
-              <Route path="/contact" component={Contact}/>
-               <Route path="/terms" component={Terms}/>
-              <Route path="/privacypolicy" component={Privacypolicy}/>
-              <Route path="/users" component={Users}/>
-        
-            
             <Route path="/tips" component={Tips}/>
-            <Route path="/team" component={Team}/>
-            
-            
              
           </div>
 

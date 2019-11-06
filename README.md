@@ -1,4 +1,7 @@
-TEAM NAMES: VICTORIA MORSE
+TEAM NAMES: ADAM GARDNER
+            VICTORIA MORSE
+            LEN RUNDBLAD
+
 
 Title: A blog for dogs
 
@@ -58,9 +61,7 @@ Initial Features:
 
 Stretch Goals:
 
-<<<<<<< HEAD
+
 •	Using Social Media login, Authentication
-=======
-•	Using Social Media login
->>>>>>> NewDev
+
 
