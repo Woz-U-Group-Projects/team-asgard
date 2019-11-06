@@ -39,37 +39,37 @@ class Blog extends Component {
   addBlog = () => {
     let url = "http://localhost:8080/blog";
    
-    const data = this.state.imagePreviewUrl.split(',')[1];
-    var raw = window.atob(data);
-    var rawlength = raw.length;
-    var array = new Uint8Array(new ArrayBuffer(rawlength));
+    //const data = this.state.imagePreviewUrl.split(',')[1];
+    // var raw = window.atob(data);
+    // var rawlength = raw.length;
+    // var array = new Uint8Array(new ArrayBuffer(rawlength));
    
-    var imge = [];
-    for(var i =0; i<rawlength; i++){
-      array[i] = raw.charCodeAt(i);
-      imge.push((array[i]));
+    // var imge = [];
+    // for(var i =0; i<rawlength; i++){
+    //   array[i] = raw.charCodeAt(i);
+    //   imge.push((array[i]));
     axios.post(url,{ name: this.name.current.value ,  content: this.content.current.value, }).then(response => {
       // refresh the data
       this.getData();
       // empty the input
       this.name.current.value = "";
       this.content.current.value = "";
-      this.imge.current.value = "";
+     // this.imge.current.value = "";
     });
   };
-}
 
-  _handleImageChange(e){
-    let reader = new FileReader();
-    let file = e.target.files[0];
-    reader.onloadend = ()=>{
-      this.setState({
-        file :file,
-        imagePreviewUrl: reader.result
-      });
-    }
-    reader.readAsDataURL(file);
-  }
+
+  // _handleImageChange(e){
+  //   let reader = new FileReader();
+  //   let file = e.target.files[0];
+  //   reader.onloadend = ()=>{
+  //     this.setState({
+  //       file :file,
+  //       imagePreviewUrl: reader.result
+  //     });
+  //   }
+  //   reader.readAsDataURL(file);
+  // }
 
 
   render() {
@@ -104,10 +104,10 @@ class Blog extends Component {
        
         <br></br>
         <button onClick={this.addBlog}>Submit</button>
-        <label className="col-sm-2 cold-form-label"> add image </label>
+        {/* <label className="col-sm-2 cold-form-label"> add image </label>
         <div className="col-sm-10">
           <input type="file" className="form-control" onchange={(e)=>this._handleImageChange}/>
-        </div>
+        </div> */}
      
      <br/>
         <h3>Previous Comments</h3>
