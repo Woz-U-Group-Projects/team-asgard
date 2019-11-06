@@ -29,16 +29,11 @@ class Main extends Component {
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/tips">Tips</NavLink></li>
-            
-             <li><NavLink to="/register">Register</NavLink></li>
-              <li><NavLink to="/login">Login</NavLink></li>
-              <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
-            
+            <li><NavLink to="/register">Register</NavLink></li>
+            <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
             <li><NavLink to="/users">Users</NavLink></li>
-            
             <li><NavLink to="/blog">Blog</NavLink></li>
             <li><NavLink to="/article">Articles</NavLink></li>
-            <li><NavLink to="/tips">Tips</NavLink></li>
             <li><NavLink to="/team">Team</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
             <span><li><NavLink to="/login" id="rightNav">Sign In</NavLink></li></span>
@@ -46,10 +41,15 @@ class Main extends Component {
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
+            <Route path="/tips" component={Tips}/>
+            <Route path="/register" component={Register}/>
+            <Route path="/forgotpass" component={Forgotpass}/>
+            <Route path="/users" component={Users}/>
             <Route path="/blog" component={Blog}/>
             <Route path="/article" component={Article}/>
-            <Route path="/tips" component={Tips}/>
-             
+            <Route path="/team" component={Team}/>
+            <Route path="/contact" component={Contact}/>
+            <Route path="/login" component={Login}/>
           </div>
 
           <div className="footer">
