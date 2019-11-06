@@ -16,11 +16,7 @@ import Tips from "./Tips";
 import Users from "./Users";
 import Terms from "./Terms";
 import Privacypolicy from "./Privacypolicy";
-
 import Team from "./Team";
-import Tips from "./Tips";
-
-
  
 class Main extends Component {
   render() {
