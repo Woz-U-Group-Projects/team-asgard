@@ -34,44 +34,36 @@ class Tips extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <h1><b>Tips Page</b></h1>
-            <h4>Welcome to our Tips page, everything from items to training our companion.</h4>
-          </div>
-
+        <div className="jumbotron text-center">
+          <h1><b>Tips Page</b></h1>
+          <h4>Welcome to our Tips page, everything from items to training our companion.</h4>
         </div>
         <div className="row mb-2">
           <div className="col-md-6">
             <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative">
               <div className="col p-4 d-flex-column position-static">
-                <strong className="d-inline-block mb-2">Our Item of the week!</strong>
-
+                <h2>Our Item of the week!</h2>
                 <h3>The Hurtta Trail Pack</h3>
-                <h6>This is the best all in one bag for dog walking.
-                  You don't even need to carry the bag,
+                <img className="img-fluid" alt="DogPack" src="https://images-na.ssl-images-amazon.com/images/I/61qFOmXnYHL._AC_SL1000_.jpg"></img>
+                <p>This is the best all in one bag for dog walking. You don't even need to carry the bag,
                   the harness can be equiped with bags that go on either side of the dog.
-                  So you can leave the lifting for your little companion.
-                  Enough room to store all your dog walking needs.
-                </h6>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                <a target="blank" href="https://images-na.ssl-images-amazon.com/images/I/61qFOmXnYHL._AC_SL1000_.jpg">
-                  <img width="460" height="320" src="https://images-na.ssl-images-amazon.com/images/I/61qFOmXnYHL._AC_SL1000_.jpg"></img>
-                </a>
+                  So you can leave the lifting for your little companion. Enough room to store all your dog walking needs.
+                </p>
               </div>
             </div>
           </div>
           <div className="col-md-6">
             <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative">
+            <div className="col p-4 d-flex-column position-static">
               <h3><b>Todays activity for your dog!</b></h3>
-              <img width="640" height="320" src="https://www.wellnesspetfood.com/sites/default/files/styles/blog_feature/public/media/images/dog-park.jpg?itok=O8vkW9-R"></img>
               <h3>To the Park!</h3>
-              <h6>Okay we get it, you just got home from work and definitely dont want to go back out.
+              <img className="img-fluid" alt="DogsPark" src="https://www.wellnesspetfood.com/sites/default/files/styles/blog_feature/public/media/images/dog-park.jpg?itok=O8vkW9-R"></img>
+              <p>Okay we get it, you just got home from work and definitely dont want to go back out.
                 But who loves to greet you everyday once you get home, who loves meeting your friends when they come over.
                 Your dog. They LOVE to socialize and interact with people and animals. The dog park is a great way for your pup
                 to get some exercise and familiarize themselves with other dogs.
-              </h6>
+              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -83,26 +75,29 @@ class Tips extends React.Component {
             allowfullscreen>
           </iframe>
         </div>
-        <div className="col-sm-4">
-          <form action="" method="">
-            <label for="userTips"><h2>Got a Tip we missed? Add your own!</h2></label>
-            <textarea id="userTips" rows="5" cols="70" placeholder="Enter your tip here!"></textarea>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Username"></input>
-              <button onClick={this.addtipsSubmission} class="btn btn-success" type="submit">Submit</button>
-            </div>
-          </form>
-          <table >
-            <div>
-              <th>UserName</th>
-            </div>
-            <div>
-              {this.state.projects.map(p => (
-                <tr key={p.id}>
-                  <td>{p.userName} </td>
-                </tr>
-              ))}</div>
-          </table>
+        <div className="col-lg-12">
+          <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative">
+            <form action="" method="">
+              <label for="userTips"><h2>Got a Tip we missed? Add your own!</h2></label>
+              <textarea id="userTips" rows="5" cols="70" placeholder="Enter your tip here!"></textarea>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username"></input>
+                <button onClick={this.addTips} class="btn btn-success" type="submit">Submit</button>
+              </div>
+            </form>
+            <table >
+              <div>
+                <th>UserName</th>
+              </div>
+              <div>
+                {this.state.projects.map(p => (
+                  <tr key={p.id}>
+                    <td>{p.userName} </td>
+                    <td>{p.tipsSubmission} </td>
+                  </tr>
+                ))}</div>
+            </table>
+          </div>
         </div>
       </div>
     );
