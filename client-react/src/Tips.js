@@ -21,8 +21,8 @@ class Tips extends React.Component {
   };
 
   addTips = () => {
-    let url = "http://localhost:8080/Tips";
-    axios.post(url, { userName: this.userName.current.value, tipsSubmission: this.tipsSubmission.current.value }).then(response => {
+    let url = "http://localhost:8080/tips";
+    axios.post(url, { userName: this.userName.current.value , tipsSubmission: this.tipsSubmission.current.value }).then(response => {
       // refresh the data
       this.getData();
       // empty the input
@@ -54,14 +54,14 @@ class Tips extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative">
-            <div className="col p-4 d-flex-column position-static">
-              <h3><b>Todays activity for your dog!</b></h3>
-              <h3>To the Park!</h3>
-              <img className="img-fluid" alt="DogsPark" src="https://www.wellnesspetfood.com/sites/default/files/styles/blog_feature/public/media/images/dog-park.jpg?itok=O8vkW9-R"></img>
-              <p>Okay we get it, you just got home from work and definitely dont want to go back out.
-                But who loves to greet you everyday once you get home, who loves meeting your friends when they come over.
-                Your dog. They LOVE to socialize and interact with people and animals. The dog park is a great way for your pup
-                to get some exercise and familiarize themselves with other dogs.
+              <div className="col p-4 d-flex-column position-static">
+                <h3><b>Todays activity for your dog!</b></h3>
+                <h3>To the Park!</h3>
+                <img className="img-fluid" alt="DogsPark" src="https://www.wellnesspetfood.com/sites/default/files/styles/blog_feature/public/media/images/dog-park.jpg?itok=O8vkW9-R"></img>
+                <p>Okay we get it, you just got home from work and definitely dont want to go back out.
+                  But who loves to greet you everyday once you get home, who loves meeting your friends when they come over.
+                  Your dog. They LOVE to socialize and interact with people and animals. The dog park is a great way for your pup
+                  to get some exercise and familiarize themselves with other dogs.
               </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ class Tips extends React.Component {
               <textarea id="userTips" rows="5" cols="70" placeholder="Enter your tip here!"></textarea>
               <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Username"></input>
-                <button onClick={this.addTips} class="btn btn-success" type="submit">Submit</button>
+                <button onClick={this.addTips} className="btn btn-success" type="submit">Submit</button>
               </div>
             </form>
             <table >
@@ -90,7 +90,7 @@ class Tips extends React.Component {
                 <th>UserName</th>
               </div>
               <div>
-                {this.state.projects.map(p => (
+                {this.state.projects.reverse().map(p => (
                   <tr key={p.id}>
                     <td>{p.userName} </td>
                     <td>{p.tipsSubmission} </td>
