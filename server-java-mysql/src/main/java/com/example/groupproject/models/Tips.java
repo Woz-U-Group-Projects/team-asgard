@@ -1,7 +1,12 @@
 package com.example.groupproject.models;
 
-//import javax.persistence.Column;
-import javax.persistence.*;
+// //import javax.persistence.Column;
+// import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "tips")
@@ -25,14 +30,14 @@ public class Tips {
     return this.userName;
   }
 
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
+
   public String getTipsSubmission() {
     return this.tipsSubmission;
   }
 
-  public void setUserName(String userName) {
-    this.userName = userName;
-  }
-  
   public void setTipsSubmission(String tipsSubmission) {
     this.tipsSubmission = tipsSubmission;
   }
