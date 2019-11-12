@@ -53,7 +53,7 @@ class Users extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="userBody">
         <label>
           Enter First Name: 
         <input ref={this.firstName} /><br></br>
