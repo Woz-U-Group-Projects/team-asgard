@@ -69,27 +69,25 @@ class Users extends React.Component {
         <br></br>
         <button onClick={this.addUser}>Add to Database</button>
         <h3>List of Users in Our Database</h3>
-        <table >
-            <div>
-                <th>ID**</th>
-                <th>First Name**</th>
-                <th>Last Name**</th>
+        <table border="1" cellPadding="2" cellSpacing="2" >
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
                 <th>UserName</th>
-            </div>
-            <div>
-          {this.state.projects.map(p => (
+            </tr>
             
-
-              
-              <tr key={p.id}>
-                <td>{p.id}**</td>  
-                <td>{p.firstName}**</td>
-                <td>{p.lastName}** </td>
-                <td>{p.userName} </td>
+          {this.state.projects.map(p => (
+             
+              <tr>
+                <td>{p.id}</td>  
+                <td>{p.firstName}</td>
+                <td>{p.lastName}</td>
+                <td>{p.userName}</td>
               </tr>
               
             
-          ))}</div>
+          ))}
         </table>
       </div>
     );
