@@ -1,13 +1,192 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, p, ul, li, h3, h4, h5, #blogName {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  color:#0B0C10;
+  text-align: center;
+}
+
+h4 {
+  color: #45A29E;
+}
+
+ul.header {
+  background-color: #1F2833;
+  padding: 0;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.header li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+#rightNav{
+  display: inline-block;
+  float: right; 
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color:#45A29E;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom:20px;
+}
+
+.img-thumbnail {
+  width: 17%;
+}
+
+.img-cover {
+  width: 90%;
+  border: 10px solid #66FCF1;
+  border-radius: 5%;
+}
+#blogTextbox {
+  width: 70%;
+  height: 100px;
+
+}
+#About {
+  background-color: #66FCF1;
+  color: #1f2833;
+}
+
+.bottomQuote {
+  text-align: center;
+  font-style: italic;
+}
+
+#bottomRow {
+  width: 99%;
+  bottom:0px; 
+}
+
+#titleCard {
+  background-color: #45A29E;
+  color: white;
+border: none;
+}
+
+.card {
+  box-shadow: 5px 10px #C5C6C7;
+  color: #0B0C10;
+  padding: 20px;
+}
+
+.card1 {
+  color: #0B0C10;
+  padding: 20px;
+}
+
+#half {
+  background-color:#1f2833;
+  color: white;
+}
+
+
+#quote {
+  margin: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 85px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#socialMedia {
+  text-align: center;
+}
+
+.fa-facebook {
+  background:#0B0C10;
+  color: white;
+}
+.fa-twitter {
+  background: #45A29E;
+  color: white;
+}
+
+.sButton {
+  padding: 60px;
+}
+#container-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tip1 {
+  display: flex;
+}
+.tip2 {
+  display: flex;
+}
+.userTips {
+  display: flex;
+}
+
+  #userBody 
+    {
+      background-color:whitesmoke;
+      color: black;
+      
+    }
+    
+    
+ 
+
+@media screen and (max-width: 480px){
+#userBody 
+  {
+    background-color:red;
+    color: black;
+    
+  }
+  
+  
 }
