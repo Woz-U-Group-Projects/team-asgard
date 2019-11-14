@@ -1,23 +1,25 @@
 body {
   background-color: white;
   padding: 30px;
+  
 }
 
 h1, h2, p, ul, li, h3, h4, h5, #blogName {
   font-family: 'Ubuntu', sans-serif;
 }
 
+
 h1 {
-  color:#0B0C10;
+  color:BLACK;
   text-align: center;
 }
 
 h4 {
-  color: #45A29E;
+  color: #FF652F;
 }
 
 ul.header {
-  background-color: #1F2833;
+  background-color: BLACK;
   padding: 0;
 }
 
@@ -36,7 +38,7 @@ ul.header li a {
 }
 
 #rightNav{
-  display: inline-block;
+ 
   float: right; 
 }
 
@@ -54,7 +56,7 @@ ul.header li a {
 }
 
 .active {
-  background-color:#45A29E;
+  background-color:#FF652F;
 }
 
 .footer {
@@ -78,18 +80,17 @@ label {
 }
 
 .img-cover {
-  width: 90%;
-  border: 10px solid #66FCF1;
+  width: 98%;
+  border: 10px solid #FF652F;
   border-radius: 5%;
 }
-#blogTextbox {
-  width: 70%;
-  height: 100px;
 
-}
-#About {
-  background-color: #66FCF1;
-  color: #1f2833;
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40%;
+  width: 100%;
 }
 
 .bottomQuote {
@@ -103,30 +104,55 @@ label {
 }
 
 #titleCard {
-  background-color: #45A29E;
+  background-color: darkgray;
   color: white;
 border: none;
 }
 
-.card {
-  box-shadow: 5px 10px #C5C6C7;
-  color: #0B0C10;
-  padding: 20px;
-}
-
-.card1 {
-  color: #0B0C10;
-  padding: 20px;
-}
-
-#half {
-  background-color:#1f2833;
+#About {
+  background-color: darkgray;
   color: white;
 }
 
 
+.card {
+  box-shadow: 5px 10px #C5C6C7;
+  color: BLACK;
+  padding: 20px;
+
+}
+
+.postContainer {
+  display: block;
+}
+
+#oldPosts {
+  margin-bottom: 30px;
+}
+
+
+.card1 {
+  color: black;
+  padding: 20px;
+}
+
+
+
+#half {
+  background-color: #FF652F;
+  color: white;
+}
+
+#posts {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
 #quote {
   margin: 30px;
+  color: #FF652F
 }
 
 .fa {
@@ -143,11 +169,11 @@ border: none;
 }
 
 .fa-facebook {
-  background:#0B0C10;
+  background:#FF652F;
   color: white;
 }
 .fa-twitter {
-  background: #45A29E;
+  background: darkgray;
   color: white;
 }
 

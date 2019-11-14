@@ -20,7 +20,7 @@ public class BlogController {
 
     @GetMapping("/blog")
     public List<Blog> getBlog() {
-        List<Blog> foundBlog = dao.findAll();
+            List<Blog> foundBlog = dao.findAll();
         return foundBlog;
     }
 
