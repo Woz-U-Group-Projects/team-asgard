@@ -1,6 +1,8 @@
 TEAM NAMES: ADAM GARDNER
             VICTORIA MORSE
             LEN RUNDBLAD
+            Jared Hightower
+        
 
 
 Title: A blog for dogs
