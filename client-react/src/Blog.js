@@ -5,12 +5,13 @@ class Blog extends Component {
   constructor(props) {
     super(props);
     
-    const posts = [];
+    //const posts = [];
     this.state = { posts: [] };
     //this.state = { projects: [] };
     this.title = React.createRef();
     this.name = React.createRef();
     this.content = React.createRef();
+    //this._handleImageChange = this._handleImageChange.bind(this);
 
     //for (let i=0; i<5; i++) {
       //posts.push ({
@@ -43,14 +44,14 @@ class Blog extends Component {
     let url = "http://localhost:8080/blog";
    
     //const data = this.state.imagePreviewUrl.split(',')[1];
-    // var raw = window.atob(data);
-    // var rawlength = raw.length;
-    // var array = new Uint8Array(new ArrayBuffer(rawlength));
+     //var raw = window.atob(data);
+     //var rawlength = raw.length;
+     //var array = new Uint8Array(new ArrayBuffer(rawlength));
    
-    // var imge = [];
-    // for(var i =0; i<rawlength; i++){
-    //   array[i] = raw.charCodeAt(i);
-    //   imge.push((array[i]));
+     //var imge = [];
+     //for(var i =0; i<rawlength; i++){
+       //array[i] = raw.charCodeAt(i);
+       //imge.push((array[i]));
     axios.post(url,{ name: this.name.current.value ,  title: this.title.current.value , content: this.content.current.value, }).then(response => {
       // refresh the data
       this.getData();
@@ -58,23 +59,26 @@ class Blog extends Component {
       this.name.current.value = "";
       this.title.current.value = "";
       this.content.current.value = "";
-     // this.imge.current.value = "";
+      //this.imge.current.value = "";
+      //this._handleImageChange = this._handleImageChange.bind(this);
     });
   };
 
 
-  // _handleImageChange(e){
-  //   let reader = new FileReader();
-  //   let file = e.target.files[0];
-  //   reader.onloadend = ()=>{
-  //     this.setState({
-  //       file :file,
-  //       imagePreviewUrl: reader.result
-  //     });
-  //   }
-  //   reader.readAsDataURL(file);
-  // }
 
+  // // _handleImageChange(e) {
+  //   // e.preventDefault();
+  //    //let reader = new FileReader();
+  //   //let file = e.target.files[0];
+  //    reader.onloadend = ()=>{
+  //      //this.setState({
+  //        //file :file,
+  //        //imagePreviewUrl: reader.result
+  //      });
+  //    }
+  //    reader.readAsDataURL(file)
+  //  }
+  
 
   render() {
     return (
@@ -99,10 +103,10 @@ class Blog extends Component {
                         <button onClick={this.addBlog}>Submit</button>
                                 <br/>
 
-                               {/*  <label> add image </label>
+                                 {/* <label> add image </label>
                                 <div className="col-sm-10">
                                   <input type="file" ref={this.image} className="form-control" onchange={(e)=>this._handleImageChange}/>
-                                </div>  */}
+                                </div>   */}
                       </form>
                     </div>
               </div>  
@@ -131,10 +135,10 @@ class Blog extends Component {
                         <tr>
                           <td><div class="postContainer">{p.content} </div> </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <br/>
                           {p.image}
-                        </tr>
+                        </tr> */}
                           <br/>
                         <tr>
                           <td> posted: {p.date}</td>

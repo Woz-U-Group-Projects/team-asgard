@@ -29,14 +29,20 @@ class Main extends Component {
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/tips">Tips</NavLink></li>
-            <li><NavLink to="/register">Register</NavLink></li>
-            <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
-            <li><NavLink to="/users">Users</NavLink></li>
+            
+            
+            
             <li><NavLink to="/blog">Blog</NavLink></li>
             <li><NavLink to="/article">Articles</NavLink></li>
             <li><NavLink to="/team">Team</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
-            <span><li><NavLink to="/login" id="rightNav">Sign In</NavLink></li></span>
+            <span>
+            <li><NavLink to="/login" id="rightNav">Sign In</NavLink></li>
+            <li><NavLink to="/register" id="rightNav">Register</NavLink></li>
+            <li><NavLink to="/users" id="rightNav">Users</NavLink></li>
+            <li><NavLink to="/forgotpass" id="rightNav">Forgot Password</NavLink></li>
+        
+            </span>
            
           </ul>
           <div className="content">

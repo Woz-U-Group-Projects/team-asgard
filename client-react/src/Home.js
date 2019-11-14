@@ -36,12 +36,11 @@ class Home extends Component {
                                         <br/>
                                         <h2> What's all the bark about?</h2> 
                                         <br/>
+                                        <h5>Labrador Retrievers have long held the top spot for most popular breed in the USA </h5>
                                     </div>
                                 </div>
 
-                               
-                               
-                        <h5>Labrador Retrievers have long held the top spot for most popular breed in the USA, </h5>
+                               <br/>
                                 <h5> Check out our most recent blog post...</h5>
                                 <br/>
                                 <br/>
