@@ -85,6 +85,9 @@ label {
   border-radius: 5%;
 }
 
+a:hover {
+  text-decoration-line: none;
+}
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -110,6 +113,7 @@ border: none;
 }
 
 #About {
+  margin-top: 30px;
   background-color: darkgray;
   color: white;
 }
@@ -120,6 +124,15 @@ border: none;
   color: BLACK;
   padding: 20px;
 
+}
+
+.centertext{
+  background-color: black;
+  color: white;
+  width:100%;
+  text-align: center;
+  padding: 30px;
+  overflow: visible;
 }
 
 .postContainer {
@@ -135,8 +148,6 @@ border: none;
   color: black;
   padding: 20px;
 }
-
-
 
 #half {
   background-color: #FF652F;
@@ -169,11 +180,11 @@ border: none;
 }
 
 .fa-facebook {
-  background:#FF652F;
+  background:black;
   color: white;
 }
 .fa-twitter {
-  background: darkgray;
+  background: black;
   color: white;
 }
 
@@ -204,7 +215,9 @@ border: none;
     }
     
     
- 
+ #poster {
+   color: #FF652F;
+ }
 
 @media screen and (max-width: 480px){
 #userBody 
