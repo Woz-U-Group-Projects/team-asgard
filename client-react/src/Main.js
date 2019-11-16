@@ -13,34 +13,33 @@ import Forgotpass from "./Forgotpass";
 import Contact from "./Contact";
 import Terms from "./Terms";
 import Privacypolicy from "./Privacypolicy";
-
+import Users from "./Users";
  
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <h1><img src={doglogo} alt="DogBlog (For Animal Lovers"/></h1>
+          <h1><img src={doglogo} alt="DogBlog (For Animal Lovers)"/></h1>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/article">Article</NavLink></li>
-             <li><NavLink to="/register">Register</NavLink></li>
-              <li><NavLink to="/login">Login</NavLink></li>
-              <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
-              
-        
+            <li><NavLink to="/register">Register</NavLink></li>
+            <li><NavLink to="/login">Login</NavLink></li>
+            <li><NavLink to="/forgotpass">Forgot Password</NavLink></li>
+            <li><NavLink to="/users">Users</NavLink></li>
+            
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/article" component={Article}/>
             <Route path="/register" component={Register}/>
-             <Route path="/login" component={Login}/>
-              <Route path="/forgotpass" component={Forgotpass}/>
-              <Route path="/contact" component={Contact}/>
-               <Route path="/terms" component={Terms}/>
-              <Route path="/privacypolicy" component={Privacypolicy}/>
-        
-            
+            <Route path="/login" component={Login}/>
+            <Route path="/forgotpass" component={Forgotpass}/>
+            <Route path="/contact" component={Contact}/>
+            <Route path="/users" component={Users}/>
+            <Route path="/terms" component={Terms}/>
+            <Route path="/privacypolicy" component={Privacypolicy}/>
              
           </div>
 

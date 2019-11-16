@@ -1,6 +1,7 @@
 import React  from "react";
 import { Form, Field } from 'react-advanced-form'
 import { Input, Button } from 'react-advanced-form-addons'
+import Login from './Login';
 
 
 export default class Register extends React.Component {

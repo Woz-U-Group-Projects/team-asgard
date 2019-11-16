@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GroupProjectApplication<groupproject>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.groupproject.GroupProjectApplication",
+            "projectName": "groupproject",
+            "args": ""
+        }
+    ]
+}
