@@ -27,21 +27,21 @@ class Home extends Component {
                             <div class ="card" id="titleCard">
                                 <br/>
                                 <div class="row">
-                                    <div class="col">    
+                                    <div class="col-sm-12 col-md-6">    
                                         <img src={require('./img/lab1.png')} class="img-cover" alt="labrador"></img>  
                                     </div>
                                 
-                                    <div class="col">
-                                        <h2>Top Dog?</h2>
+                                    <div class="col-sm-12 col-md-6">
+                                        <h2>The Blog</h2>
                                         <br/>
                                         <h2> What's all the bark about?</h2> 
                                         <br/>
-                                        <h5>Labrador Retrievers have long held the top spot for most popular breed in the USA </h5>
+                                        <h5>Check out our blog page for latest. You can even add your own! </h5>
                                     </div>
                                 </div>
 
                                <br/>
-                                <h5> Check out our most recent blog post...</h5>
+                                <h5> Check out our most recent blog posts...</h5>
                                 <br/>
                                 <br/>
                               </div>
@@ -54,7 +54,7 @@ class Home extends Component {
             
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6"> 
+                    <div class="col-sm-6"> 
                         <Link to="./Tips">
                             <div class="card" id="half">
                                 <h3>Tips</h3>
@@ -63,7 +63,7 @@ class Home extends Component {
                         </Link>
                     </div>
                             
-                    <div class="col-6"> 
+                    <div class="col-sm-6"> 
                         <Link to="./Article">
                             <div class="card" id="half">
                                 <h3>Articles</h3>
@@ -80,16 +80,17 @@ class Home extends Component {
             <div class="centertext">
                 <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <h3>Have a look around, we are constantly expanding our site to serve dog lovers everywhere!</h3>
                         </div>
                      </div>
                 </div>
             </div>
 
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                <div class="col-2"></div>
+                <div className="col-8">
                         <Link to="./Team">
                             <div class="card" id="About">  
                                 <h3>About</h3>
@@ -97,25 +98,23 @@ class Home extends Component {
                              </div>
                         </Link>
                     <div>
-                </div>
+                    
+                    </div>
+                    </div>
+                    </div>
+                   
+            <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col">
                             <div id="socialMedia">
                                 <div class="sButton">
                                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-6">
-                            <div id="socialMedia">
-                                <div class="sButton">
                                     <a href="http://www.twitter.com/" class="fa fa-twitter"></a>
+
                                 </div>
                             </div>
                     </div>
-
                 </div>
-            </div>
             </div>
 
 

@@ -10,10 +10,10 @@ class Blog extends Component {
     this.name = React.createRef();
     this.content = React.createRef();
     
+    //Work In Progress - Was attempting to create a loop so that only the 5 most recent posts to the database would be displayed
     //const posts = [];
     //this.state = { projects: [] };
-    //this._handleImageChange = this._handleImageChange.bind(this);
-
+    
     //for (let i=0; i<5; i++) {
       //posts.push ({
        //posts
@@ -35,6 +35,22 @@ class Blog extends Component {
   addBlog = () => {
     let url = "http://localhost:8080/blog";
    
+    
+    axios.post(url,{ name: this.name.current.value ,  title: this.title.current.value , content: this.content.current.value, }).then(response => {
+      
+      this.getData();
+     
+      this.name.current.value = "";
+      this.title.current.value = "";
+      this.content.current.value = "";
+    
+    });
+  };
+
+  
+    //Work In Progress - was trying to improve Blog so users could upload and display pictures.
+    //this._handleImageChange = this._handleImageChange.bind(this);
+
     //const data = this.state.imagePreviewUrl.split(',')[1];
      //var raw = window.atob(data);
      //var rawlength = raw.length;
@@ -45,19 +61,9 @@ class Blog extends Component {
      //array[i] = raw.charCodeAt(i);
      //imge.push((array[i]));
     
-     axios.post(url,{ name: this.name.current.value ,  title: this.title.current.value , content: this.content.current.value, }).then(response => {
-      
-      this.getData();
-     
-      this.name.current.value = "";
-      this.title.current.value = "";
-      this.content.current.value = "";
-    
       //this.imge.current.value = "";
       //this._handleImageChange = this._handleImageChange.bind(this);
-    });
-  };
-
+  
   //  _handleImageChange(e) {
   //    e.preventDefault();
   //    let reader = new FileReader();
@@ -70,7 +76,18 @@ class Blog extends Component {
   //    }
   //    reader.readAsDataURL(file)
   //  }
-  
+  // _handleImageChange = (e) => {
+  // e.preventDefault();
+  // this.setState({
+  //     selectedFile: e.target.files[0]
+  // });
+  // const formData = new FormData();
+  // formData.append('file', this.state.selectedFile);
+  // ApiService.upload(formData)
+  //     .then(res => {
+  //             console.log(res.data);
+  //             alert("File uploaded successfully.")
+
 
   render() {
     return (
@@ -78,6 +95,7 @@ class Blog extends Component {
 
         <div class="container-fluid">
           <div class="row">
+  <div class="col">
               <div class="card">
                 <h2>Share your thoughts with the Dog Blog community:</h2> <br/>
                     <div>
@@ -93,18 +111,20 @@ class Blog extends Component {
                                  {/* <label> add image </label>
                                 <div className="col-sm-10">
                                   <input type="file" ref={this.image} className="form-control" onchange={(e)=>this._handleImageChange}/>
-                                </div>   */}
+                                </div>    */}
                       </form>
                     </div>
-              </div>  
+              </div> 
+              </div> 
           </div>
         </div>
 
         <div class="container-fluid">
            <div class="row">
+          <div class="col">
                 <ul>
                   {this.state.posts.reverse().map(p => (
-                    <div class="card" id="oldPosts">
+                    <div class="card" >
                       <table>
                         <tbody>
                           <tr>
@@ -116,10 +136,10 @@ class Blog extends Component {
                           <tr>
                             <td><div class="postContainer">{p.content} </div> </td>
                           </tr>
-                            {/* <tr>
+                            <tr>
                               <br/>
                               {p.image}
-                            </tr> */}<br/>
+                            </tr> <br/>
                           <tr>
                             <td> posted: {p.date}</td>
                           </tr>
@@ -128,6 +148,7 @@ class Blog extends Component {
                   </div>
                   ))}
                 </ul>
+                </div>
               </div>
             </div>
         
