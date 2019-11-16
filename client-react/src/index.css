@@ -80,11 +80,14 @@ label {
 }
 
 .img-cover {
-  width: 98%;
+  width: 90%;
   border: 10px solid #FF652F;
   border-radius: 5%;
 }
 
+a:hover {
+  text-decoration-line: none;
+}
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -110,6 +113,7 @@ border: none;
 }
 
 #About {
+  margin-top: 30px;
   background-color: darkgray;
   color: white;
 }
@@ -119,7 +123,16 @@ border: none;
   box-shadow: 5px 10px #C5C6C7;
   color: BLACK;
   padding: 20px;
+  margin-top: 30px;
+}
 
+.centertext{
+  background-color: black;
+  color: white;
+  width:100%;
+  text-align: center;
+  padding: 30px;
+  overflow: visible;
 }
 
 .postContainer {
@@ -136,11 +149,10 @@ border: none;
   padding: 20px;
 }
 
-
-
 #half {
   background-color: #FF652F;
   color: white;
+  margin-bottom: 20px;
 }
 
 #posts {
@@ -169,12 +181,17 @@ border: none;
 }
 
 .fa-facebook {
-  background:#FF652F;
+  background:black;
   color: white;
+  margin-right: 10px;;
 }
 .fa-twitter {
-  background: darkgray;
+  background: black;
   color: white;
+}
+
+a:hover {
+  color:  #FF652F;
 }
 
 .sButton {
@@ -186,6 +203,28 @@ border: none;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.tip1 {
+  display: flex;
+}
+.tip2 {
+  display: flex;
+}
+.userTips {
+  display: flex;
+}
+
+  #userBody 
+    {
+      background-color:whitesmoke;
+      color: black;
+      
+    }
+    
+    
+ #poster {
+   color: #FF652F;
+ }
+
 @media screen and (max-width: 480px){
 #userBody 
   {
