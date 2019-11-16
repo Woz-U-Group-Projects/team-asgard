@@ -22,7 +22,7 @@ class Contact extends React.Component {
             <Route path="/register" component={Register}/>
             <li><Link to="/forgotpass">Forgot Password</Link></li>
             <Route path="/forgotpass" component={Forgotpass}/>
-
+           
       </div>
         
         
