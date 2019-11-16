@@ -42,12 +42,3 @@ ul.header li a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.tip1 {
-  display: flex;
-}
-.tip2 {
-  display: flex;
-}
-.userTips {
-  display: flex;
-}
