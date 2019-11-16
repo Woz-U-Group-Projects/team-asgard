@@ -82,7 +82,7 @@ class Team extends Component {
                 <div class="text-center mt-4">
                   <h5 class="font-weight-bold pb-1">Francis Osaji</h5>
                   <p class="text-muted mb-lg-0">
-                    My name is Francis Osaji, though known as Donfrancis. I love tech related stuffs. I run a tech blog and a web development start up at www.systemdigits.com, also i run a web hosting/domain company where i host hundreds of websites for companies and individuals via https://hostnetsystems.com and http://hostnet.com.ng. 
+                    My name is Francis Osaji, though known as Donfrancis. I love tech related stuff. I run a tech blog and a web development start up at www.systemdigits.com, also I run a web hosting/domain company where I host hundreds of websites for companies and individuals via https://hostnetsystems.com and http://hostnet.com.ng. 
                     Started Software Development training at Woz-U to keep up to date with Software development.
                   </p>
                 </div>
