@@ -21,11 +21,12 @@ public class Tips {
   private Long id;
   private String userName;
   private String tipsSubmission;
-  private Date date;
+  
   @CreationTimestamp
   @Temporal(TemporalType.DATE)
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-
+  private Date date;
+  
   public Date getDate() {
     return date;
   }
