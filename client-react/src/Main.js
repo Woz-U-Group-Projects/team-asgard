@@ -7,7 +7,7 @@ import {
 import Home from "./Home";
 import doglogo from "./img/doglogo.png";
 import Blog from "./Blog";
-import Article from "./Article";
+//import Article from "./Article";
 import Register from "./Register";
 import Login from "./Login";
 import Forgotpass from "./Forgotpass";
@@ -33,7 +33,7 @@ class Main extends Component {
             
             
             <li><NavLink to="/blog">Blog</NavLink></li>
-            <li><NavLink to="/article">Articles</NavLink></li>
+            {/* <li><NavLink to="/article">Articles</NavLink></li> */}
             <li><NavLink to="/team">Team</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
             <span>
@@ -52,7 +52,7 @@ class Main extends Component {
             <Route path="/forgotpass" component={Forgotpass}/>
             <Route path="/users" component={Users}/>
             <Route path="/blog" component={Blog}/>
-            <Route path="/article" component={Article}/>
+            {/* <Route path="/article" component={Article}/> */}
             <Route path="/team" component={Team}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/login" component={Login}/>
