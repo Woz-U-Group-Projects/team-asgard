@@ -9,7 +9,6 @@ class Tips extends Component {
     this.tipsSubmission = React.createRef();
   }
 
-
   componentDidMount() {
     this.getData();
   }
@@ -30,8 +29,6 @@ class Tips extends Component {
       this.tipsSubmission.current.value = "";
     });
   };
-
-
 
   render() {
     return (
@@ -60,28 +57,31 @@ class Tips extends Component {
 
             {/* Tip Form */}
 
-            <div className="border-right">
-              <div className="card">
-                <h4 className="card-header info-color white-text text-center py-4">Got a Tip we missed? Submit it below!</h4>
-                <label for="matematerialTipFormUsername">
-                  <input
-                    type="text"
-                    id="materialTipFormUsername"
-                    className="form-control"
-                    ref={this.userName}
-                    placeholder="Username" />
-                </label>
-                <label for="matematerialTipFormUsername">
-                  <textarea
-                    id="matematerialTipFormUsername"
-                    className="form-control md-textarea"
-                    rows="5"
-                    ref={this.tipsSubmission}
-                    placeholder="Enter your tip here!">
-                  </textarea>
-                </label>
-                <button className="btn btn-primary btn-rounded btn-block z-depth-0 my-4 waves-effect" onClick={this.addTip}>Add Tip</button>
+            <div className="card ">
+              <div className="card-header">
+                <h4 className="card-header-title text-center py-1">
+                  Got a Tip we missed? Submit it below!
+                </h4>
               </div>
+              <label for="materialTipFormUsername">
+                <input
+                  type="text"
+                  id="materialTipFormUsername"
+                  className="form-control"
+                  ref={this.userName}
+                  placeholder="Username" />
+              </label>
+              <label for="materialTipFormUsername">
+                <textarea
+                  id="materialTipFormUsername"
+                  className="form-control md-textarea"
+                  rows="3"
+                  ref={this.tipsSubmission}
+                  placeholder="Enter your tip here!">
+                </textarea>
+              </label>
+              <button className="btn btn-primary btn-rounded btn-block z-depth-0 my-4 waves-effect" onClick={this.addTip}>Add Tip</button>
+
             </div>
 
           </div>
@@ -115,28 +115,29 @@ class Tips extends Component {
 
           {/* Tip List */}
 
-          <div className="col-12 bg-grey">
-            <h4 className="card-header info-color white-text text-center py-4">Tips from people like you!</h4>
-            <table>
-              <div>
-                <th>Username</th>
-                <th>tipsSubmission</th>
-              </div>
-              <div>
-                {this.state.projects.map(p => (
-                  <tr key={p.id}>
-                    <div className="card">
-                      <div className="card-header white">
-                        <td>{p.userName} </td>
+          <div className="col">
+            <h4 id="label" className="card-header text-center">Tips from people like you!</h4>
+            <ul>
+              {this.state.projects.reverse().map(p => (
+                <div className="card align-center">
+                  <table>
+                    <tr key={p.id}>
+                      <div className="col-12">
+                        <div className="card-header white">
+                          <td>{p.userName} </td>
+                          <td className="text-muted text-right">Submitted: {p.date}</td>
+                        </div>
+                        <div className="card-body">
+                          <td>{p.tipsSubmission} </td>
+                        </div>
+                        <div >
+                        </div>
                       </div>
-                      <div className="card-body">
-                        <td>{p.tipsSubmission} </td>
-                      </div>
-                    </div>
-                  </tr>
-                ))}
-              </div>
-            </table>
+                    </tr>
+                  </table>
+                </div>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

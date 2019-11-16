@@ -186,26 +186,6 @@ border: none;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.tip1 {
-  display: flex;
-}
-.tip2 {
-  display: flex;
-}
-.userTips {
-  display: flex;
-}
-
-  #userBody 
-    {
-      background-color:whitesmoke;
-      color: black;
-      
-    }
-    
-    
- 
-
 @media screen and (max-width: 480px){
 #userBody 
   {
@@ -213,13 +193,10 @@ border: none;
     color: black;
     
   }
-  
-  
 }
-
-.adam {
-  height: 200px;
-  width: 400px;
-  
-}
-
+  #userBody 
+    {
+      background-color:whitesmoke;
+      color: black;
+      
+    }
