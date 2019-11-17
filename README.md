@@ -2,6 +2,7 @@ TEAM NAMES: ADAM GARDNER
             VICTORIA MORSE
             LEN RUNDBLAD
             Jared Hightower
+            Francis Osaji
         
 
 
@@ -41,9 +42,9 @@ Initial Features:
 
 •	Users will Create login/sign in
 
-•	Users will have the ability to upload a photo
+•	*Users will have the ability to upload a photo
 
-•	Users will have the ability to comment on any photo
+•	*Users will have the ability to comment on any photo
 
 •	Posters will have the ability to delete a post
 
@@ -53,7 +54,7 @@ Initial Features:
 
 •	Login Page
 
-•	News/Article Page
+•	*News/Article Page
 
 •	Blog Post Page
 
