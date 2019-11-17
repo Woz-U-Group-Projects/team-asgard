@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Users Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>List of Users in the DB</h1>
+
+<form action="#" th:action="@{/users}" th:object="${users}" method="post" >
+<input th:field="*{firstname}" placeholder="First Name" />
+<input th:field="*{lastname}" placeholder="Last Name" />
+<input th:field="*{username}" placeholder="UserName" />
+<button >Submit</button>
+</form>
+
+</body>
+</html>

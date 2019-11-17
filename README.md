@@ -1,4 +1,26 @@
+TEAM NAMES: ADAM GARDNER
+            VICTORIA MORSE
+            LEN RUNDBLAD
+            Jared Hightower
+            Francis Osaji
+        
+
+
 Title: A blog for dogs
+
+Name: Francis Osaji, Adam Gardner
+
+/*** BEGINNING OF CHANGES NOTES  ***/
+CHANGES MADE BY FRANCIS OSAJI:
+* ARTICLE PAGE CREATED
+* CONTACT PAGE CREATE THOUGH NOT ASSIGNED TO ME.
+* HOME PAGE CREATED THOUGH NOT ASSIGNED TO ME
+* SOME CSS FILE ADDED.
+NOTE: NONE OF THE PAGES ARE YET CONNECTED TO BACKEND (DATABASE).
+CCHANGES MADE BY Adam Gardner:
+* USER PAGE CREATED
+* USER PAGE HAS WORKING API FOR CREATING USER IN TABLE ON LOCAL MYSQL DB.
+/*** END OF CHANGES NOTES ***/
 
 Summary of your project: 
 
@@ -12,17 +34,17 @@ Technology Used:
 
 •	Front End: React
 
-•	Back End: Spring/Express
+•	Back End: Spring
 
-•	Database: MySQL/SQLite
+•	Database: MySQL
 
 Initial Features:
 
 •	Users will Create login/sign in
 
-•	Users will have the ability to upload a photo
+•	*Users will have the ability to upload a photo
 
-•	Users will have the ability to comment on any photo
+•	*Users will have the ability to comment on any photo
 
 •	Posters will have the ability to delete a post
 
@@ -32,7 +54,7 @@ Initial Features:
 
 •	Login Page
 
-•	News/Article Page
+•	*News/Article Page
 
 •	Blog Post Page
 
@@ -42,4 +64,7 @@ Initial Features:
 
 Stretch Goals:
 
-•	Using Social Media login
+
+•	Using Social Media login, Authentication
+
+

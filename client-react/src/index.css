@@ -1,13 +1,241 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  padding: 30px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, p, ul, li, h3, h4, h5, #blogName {
+  font-family: 'Ubuntu', sans-serif;
 }
+
+
+h1 {
+  color:BLACK;
+  text-align: center;
+}
+
+h4 {
+  color: #FF652F;
+}
+
+ul.header {
+  background-color: BLACK;
+  padding: 0;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.header li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+#rightNav{
+ 
+  float: right; 
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color:#FF652F;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom:20px;
+}
+
+.img-thumbnail {
+  width: 17%;
+}
+
+.img-cover {
+  width: 90%;
+  border: 10px solid #FF652F;
+  border-radius: 5%;
+}
+
+a:hover {
+  text-decoration-line: none;
+}
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40%;
+  width: 100%;
+}
+
+.bottomQuote {
+  text-align: center;
+  font-style: italic;
+}
+
+#bottomRow {
+  width: 99%;
+  bottom:0px; 
+}
+
+#titleCard {
+  background-color: darkgray;
+  color: white;
+border: none;
+}
+
+#About {
+  margin-top: 30px;
+  background-color: darkgray;
+  color: white;
+}
+
+
+.card {
+  box-shadow: 5px 10px #C5C6C7;
+  color: BLACK;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.centertext{
+  background-color: black;
+  color: white;
+  width:100%;
+  text-align: center;
+  padding: 30px;
+  overflow: visible;
+}
+
+.postContainer {
+  display: block;
+}
+
+#oldPosts {
+  margin-bottom: 30px;
+}
+
+
+.card1 {
+  color: black;
+  padding: 20px;
+}
+
+#half {
+  background-color: #FF652F;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#posts {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+#quote {
+  margin: 30px;
+  color: #FF652F
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 85px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#socialMedia {
+  text-align: center;
+}
+
+.fa-facebook {
+  background:black;
+  color: white;
+  margin-right: 10px;;
+}
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+a:hover {
+  color:  #FF652F;
+}
+
+.sButton {
+  padding: 60px;
+}
+#container-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tip1 {
+  display: flex;
+}
+.tip2 {
+  display: flex;
+}
+.userTips {
+  display: flex;
+}
+
+  #userBody 
+    {
+      background-color:whitesmoke;
+      color: black;
+      
+    }
+    
+    
+ #poster {
+   color: #FF652F;
+ }
+
+@media screen and (max-width: 480px){
+#userBody 
+  {
+    background-color:red;
+    color: black;
+    
+  }
+}
+  #userBody 
+    {
+      background-color:whitesmoke;
+      color: black;
+      
+    }
