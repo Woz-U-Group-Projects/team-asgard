@@ -7,10 +7,10 @@ import {
 import Home from "./Home";
 import doglogo from "./img/doglogo.png";
 import Blog from "./Blog";
-import Article from "./Article";
 // import Register from "./Register";
 // import Login from "./Login";
 // import Forgotpass from "./Forgotpass";
+//import Article from "./Article";
 import Contact from "./Contact";
 import Tips from "./Tips";
 import Users from "./Users";
@@ -29,8 +29,8 @@ class Main extends Component {
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/blog">Blog</NavLink></li>
+            {/* <li><NavLink to="/article">Articles</NavLink></li> */}
             <li><NavLink to="/tips">Tips</NavLink></li>
-            <li><NavLink to="/article">Articles</NavLink></li>
             <li><NavLink to="/team">Team</NavLink></li>
             <li><NavLink to="/contact">Coming Soon</NavLink></li>
             <span>
@@ -49,7 +49,7 @@ class Main extends Component {
             {/* <Route path="/forgotpass" component={Forgotpass}/> */}
             <Route path="/users" component={Users}/>
             <Route path="/blog" component={Blog}/>
-            <Route path="/article" component={Article}/>
+            {/* <Route path="/article" component={Article}/> */}
             <Route path="/team" component={Team}/>
             <Route path="/contact" component={Contact}/>
             {/* <Route path="/login" component={Login}/> */}

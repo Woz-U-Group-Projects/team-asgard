@@ -54,7 +54,7 @@ class Home extends Component {
             
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6"> 
+                    <div class="col-sm-12"> 
                         <Link to="./Tips">
                             <div class="card" id="half">
                                 <h3>Tips</h3>
@@ -63,14 +63,14 @@ class Home extends Component {
                         </Link>
                     </div>
                             
-                    <div class="col-sm-6"> 
+                    {/* <div class="col-sm-6"> 
                         <Link to="./Article">
                             <div class="card" id="half">
                                 <h3>Articles</h3>
                                 <p>Check out our articles page and get caught up on our favorites.</p>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
